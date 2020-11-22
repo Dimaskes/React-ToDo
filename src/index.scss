@@ -35,4 +35,29 @@ code {
         height: calc(100% - 120px);
         border-right: 1px solid #F1F1F1;
     }
+    .field {
+        background: #FFFFFF;
+        border: 1px solid #EFEFEF;
+        box-sizing: border-box;
+        border-radius: 4px;
+        padding: 8px 12px;
+        width: 100%;
+        &:focus {
+            border-color: #dbdbdb;
+        }
+    }
+    .button {
+        background: #4DD599;
+        border-radius: 4px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px 20px;
+        &:hover {
+            background: darken(#4DD599, 7%);
+        }
+        &:active {
+            background: darken(#4DD599, 11%);
+        }
+    }
 }
