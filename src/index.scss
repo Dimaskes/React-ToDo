@@ -28,6 +28,7 @@ code {
     border: 1px solid #F1F1F1;
     border-radius: 10px;
     font-size: 14px;
+    display: flex;
     &__sidebar {
         padding: 60px 20px;
         background-color: #f4f6f8;
@@ -35,6 +36,11 @@ code {
         height: calc(100% - 120px);
         border-right: 1px solid #F1F1F1;
     }
+    &__tasks {
+        flex: 1;
+        padding: 60px;
+    }
+
     .field {
         background: #FFFFFF;
         border: 1px solid #EFEFEF;
