@@ -1,4 +1,8 @@
 .tasks{
+    a{
+        text-decoration: none;
+    }
+
     &:not(:last-of-type){
         margin-bottom: 40px;
     }

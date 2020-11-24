@@ -1,5 +1,6 @@
 import React from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 import AddTaskForm from './AddTaskForm';
 
@@ -25,10 +26,12 @@ const Tasks = ({list, onEditTitle, onAddTask, withoutEmpty, onRemoveTask, onEdit
 
     return (
         <div className="tasks">
-            <h2 style={{color: list.color.hex}} className="tasks__title">
-                {list.name}
-                <img onClick={editTitle} src={editSvg} alt="Edit icon"/>
-            </h2>
+            <Link to={`/lists/${list.id}`}>
+                <h2 style={{color: list.color.hex}} className="tasks__title">
+                    {list.name}
+                    <img onClick={editTitle} src={editSvg} alt="Edit icon"/>
+                </h2>
+            </Link>
 
             <div className="tasks__items">
             {!withoutEmpty && list.tasks && !list.tasks.length && <h2>Задачи отсутствуют</h2>}
