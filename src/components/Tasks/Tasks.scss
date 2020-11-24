@@ -105,4 +105,38 @@
             }
         }
     }
+
+    &__form{
+
+        &-block{
+            button{
+                margin-right: 10px;
+                margin-top: 15px;
+            }
+        }
+
+        &-new{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            cursor: pointer;
+            opacity: 0.4;
+            transition: opacity 0.2s ease-in-out;
+
+            img{
+                width: 16px;
+                height: 16px;
+                margin-left: 5px;
+            }
+            
+            span{
+                font-size: 16px;
+                margin-left: 20px;
+            }
+
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
 }
