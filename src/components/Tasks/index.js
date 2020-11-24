@@ -8,7 +8,7 @@ import editSvg from '../../assets/img/edit.svg';
 import './Tasks.scss';
 import Task from './Task';
 
-const Tasks = ({list, onEditTitle, onAddTask, withoutEmpty, onRemoveTask, onEditTask}) => {
+const Tasks = ({list, onEditTitle, onAddTask, withoutEmpty, onRemoveTask, onEditTask, onCompleteTask}) => {
 
     const editTitle = () => {
         const newTitle = window.prompt('Название списка', list.name);
@@ -33,7 +33,7 @@ const Tasks = ({list, onEditTitle, onAddTask, withoutEmpty, onRemoveTask, onEdit
             <div className="tasks__items">
             {!withoutEmpty && list.tasks && !list.tasks.length && <h2>Задачи отсутствуют</h2>}
                 {list.tasks && list.tasks.map(task => (
-                    <Task key={task.id} {...task} list={list} onRemove={onRemoveTask} onEdit={onEditTask}/>
+                    <Task key={task.id} {...task} list={list} onRemove={onRemoveTask} onEdit={onEditTask} onComplete={onCompleteTask}/>
                 ))}
                 <AddTaskForm key={list.id} list={list} onAddTask={onAddTask}/>
             </div>

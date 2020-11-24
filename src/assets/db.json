@@ -1,16 +1,6 @@
 {
   "lists": [
     {
-      "id": 1,
-      "name": "Продажи!",
-      "colorId": 5
-    },
-    {
-      "id": 2,
-      "name": "Фронтенд",
-      "colorId": 4
-    },
-    {
       "id": 3,
       "name": "Фильмы и сериалы",
       "colorId": 3
@@ -21,83 +11,58 @@
       "colorId": 2
     },
     {
-      "name": "Ddd",
-      "colorId": 5,
-      "id": 5
+      "name": "Покупки",
+      "colorId": 7,
+      "id": 6
+    },
+    {
+      "name": "Учеба",
+      "colorId": 8,
+      "id": 7
     }
   ],
   "tasks": [
     {
-      "id": 1,
-      "listId": 2,
-      "text": "Изучить JavaScript",
-      "completed": true
-    },
-    {
-      "id": 2,
-      "listId": 2,
-      "text": "Изучить паттерны проектирования",
-      "completed": false
-    },
-    {
-      "id": 3,
-      "listId": 2,
-      "text": "ReactJS Hooks (useState, useReducer, useEffect и т.д.)",
-      "completed": true
-    },
-    {
-      "id": 4,
-      "listId": 2,
-      "text": "Redux (redux-observable, redux-saga)",
-      "completed": false
-    },
-    {
-      "listId": 1,
-      "text": "test",
-      "completed": false,
-      "id": 6
-    },
-    {
-      "listId": 1,
-      "text": "qweqwe",
-      "completed": true,
-      "id": 8
-    },
-    {
-      "listId": 1,
-      "text": "123",
-      "completed": false,
-      "id": 9
-    },
-    {
       "listId": 4,
-      "text": "Купить 1984!",
-      "completed": true,
+      "text": "Самурай без меча",
+      "completed": false,
       "id": 10
     },
     {
       "listId": 3,
-      "text": "asff",
-      "completed": false,
+      "text": "Титаник",
+      "completed": true,
       "id": 13
     },
     {
       "listId": 4,
       "text": "Война и мир",
-      "completed": false,
+      "completed": true,
       "id": 14
     },
     {
-      "listId": 2,
-      "text": "тест22",
+      "listId": 6,
+      "text": "Молоко",
       "completed": false,
-      "id": 15
+      "id": 17
     },
     {
-      "listId": 5,
-      "text": "sdfs",
+      "listId": 6,
+      "text": "Хлеб",
       "completed": false,
-      "id": 16
+      "id": 18
+    },
+    {
+      "listId": 6,
+      "text": "Вода",
+      "completed": false,
+      "id": 19
+    },
+    {
+      "listId": 3,
+      "text": "Элита",
+      "completed": false,
+      "id": 20
     }
   ],
   "colors": [
