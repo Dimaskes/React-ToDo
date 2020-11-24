@@ -19,8 +19,8 @@ code {
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 750px;
-    height: 530px;
+    width: calc(100vw - 200px);
+    height: calc(100vh - 100px);
     transform: translate(-50%, -50%);
     -webkit-box-shadow: 4px 4px 8px 0px rgba(32, 68, 95, 0.2);
     -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
@@ -32,13 +32,14 @@ code {
     &__sidebar {
         padding: 60px 20px;
         background-color: #f4f6f8;
-        width: 200px;
+        width: 23%;
         height: calc(100% - 120px);
         border-right: 1px solid #F1F1F1;
     }
     &__tasks {
         flex: 1;
         padding: 60px;
+        overflow: auto;
     }
 
     .field {
