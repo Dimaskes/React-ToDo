@@ -109,7 +109,7 @@ const onEditTask = (listId, taskObj) => {
               }}
           items={[
             {
-            active: true,
+            active: location.pathname === '/',
             icon: 
             <svg
               width="18"

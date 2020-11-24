@@ -31,11 +31,11 @@ const Tasks = ({list, onEditTitle, onAddTask, withoutEmpty, onRemoveTask, onEdit
             </h2>
 
             <div className="tasks__items">
-            {!withoutEmpty && !list.tasks.length && <h2>Задачи отсутствуют</h2>}
-                {list.tasks.map(task => (
+            {!withoutEmpty && list.tasks && !list.tasks.length && <h2>Задачи отсутствуют</h2>}
+                {list.tasks && list.tasks.map(task => (
                     <Task key={task.id} {...task} list={list} onRemove={onRemoveTask} onEdit={onEditTask}/>
                 ))}
-                <AddTaskForm list={list} onAddTask={onAddTask}/>
+                <AddTaskForm key={list.id} list={list} onAddTask={onAddTask}/>
             </div>
         </div>
     )
